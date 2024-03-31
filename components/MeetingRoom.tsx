@@ -24,6 +24,7 @@ import Loader from "./Loader";
 type CallLayoutType = "grid" | "speaker-left" | "speaker-right";
 
 const MeetingRoom = () => {
+  const router = useRouter();
   const [layout, setLayout] = useState<CallLayoutType>("speaker-left");
   const [showParticipants, setShowParticipants] = useState(false);
 
@@ -45,7 +46,6 @@ const MeetingRoom = () => {
         return <SpeakerLayout participantsBarPosition={"left"} />;
     }
   };
-  const router = useRouter();
   return (
     <section className="relative h-screen w-full overflows-hidden pt-4 text-white">
       <div className="relative flex size-full items-center justify-center">
