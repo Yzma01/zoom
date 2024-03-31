@@ -17,7 +17,7 @@ function Meeting({ params: {id} }: { params: { id: string } }) {
   return (
     <main className="h-screen w-full">
       <StreamCall call={call}>
-        <StreamTheme>
+        <StreamTheme >
           {!isSetUpCompleted ? (<MeetingSetUp setIsSetUpComplete={setIsSetUpComplete}/>) : (<MeetingRoom />)}
         </StreamTheme>
       </StreamCall>
