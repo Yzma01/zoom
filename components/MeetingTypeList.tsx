@@ -161,7 +161,6 @@ const MeetingTypeList = () => {
         buttonText="Start Meeting"
         handleClick={createMeeting}
       />
-
       <MeetingModel
         isOpen={meetingState === "isJoinigMeeting"}
         onClose={() => setMeetingState(undefined)}
